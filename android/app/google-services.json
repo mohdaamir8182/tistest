@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "1047332283656",
+    "firebase_url": "https://chatapp-37c97.firebaseio.com",
+    "project_id": "chatapp-37c97",
+    "storage_bucket": "chatapp-37c97.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047332283656:android:50b183427cd07e156038bd",
+        "android_client_info": {
+          "package_name": "com.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047332283656-dq8qsc4pghuin6uo9l32p460bls3ogf9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chatapp",
+            "certificate_hash": "b700008865753b1be889ca59022c3f4428792b66"
+          }
+        },
+        {
+          "client_id": "1047332283656-qa1kik2lds1qqfq3kqnr7r48j966npif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA4QYnN2jQXZucmEQcq1RP8H3jj4QvCJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047332283656-qa1kik2lds1qqfq3kqnr7r48j966npif.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047332283656-bhln37d3cu3h33mctndbkeb6hhu4pucb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.ChatApp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047332283656:android:656991b85be4d15d6038bd",
+        "android_client_info": {
+          "package_name": "com.tistest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047332283656-vc7jivjtb9c7846s7ofk644bgmnivm4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tistest",
+            "certificate_hash": "ce11e71a7b7d1095984b3f45665814f74ef23488"
+          }
+        },
+        {
+          "client_id": "1047332283656-qa1kik2lds1qqfq3kqnr7r48j966npif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBA4QYnN2jQXZucmEQcq1RP8H3jj4QvCJM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047332283656-qa1kik2lds1qqfq3kqnr7r48j966npif.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1047332283656-bhln37d3cu3h33mctndbkeb6hhu4pucb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.ChatApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
