@@ -21,8 +21,8 @@ const HeaderIcon = (props) => {
 
 const styles = StyleSheet.create({
   icon:{
-    height: 40, 
-    width: 40, 
+    height: 35, 
+    width: 35, 
     tintColor: '#fff'
   }
 })

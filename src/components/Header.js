@@ -16,13 +16,13 @@ const Header = (props) => {
         />
       </View>
 
-      <View style={styles.rightIcon}>
+      <View style={styles.titleContainer}>
         <Text style={styles.title}>
             {title}
         </Text>
       </View>
 
-      <View style={styles.leftIcon}>
+      <View style={styles.rightIcon}>
         
       </View>
 
@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   title: {
     color: '#fff',
     textAlign: 'center',
-    fontSize: 20,
+    fontSize: 16,
     fontWeight: 'bold'
   },
   leftIcon: {
