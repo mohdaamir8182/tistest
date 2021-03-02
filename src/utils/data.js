@@ -1,38 +1,30 @@
-export const categories = [
+export const drawerItems = [
     {
         "id": 1,
-        "name": 'Food & Drinks',
-        "icon" : require('../assets/food.png')
-
+        name: 'How it Works'
     },
     {
         "id": 2,
-        "name": 'Brunch',
-        "icon" : require('../assets/food.png')
-
+        name: "FAQ's"
     },
     {
         "id": 3,
-        "name": 'Sports & Leisure',
-        "icon" : require('../assets/food.png')
-
+        name: 'Rules of Use'
     },
     {
         "id": 4,
-        "name": 'Beauty & Wellness',
-        "icon" : require('../assets/food.png')
-
+        name: 'Found a Bug?'
     },
     {
         "id": 5,
-        "name": 'Learning',
-        "icon" : require('../assets/food.png')
-
+        name: 'Rate us'
     },
     {
         "id": 6,
-        "name": 'Family & Locals',
-        "icon" : require('../assets/food.png')
-
+        name: 'Reset PIN'
+    },
+    {
+        "id": 7,
+        name: 'Subscribe'
     }
 ]

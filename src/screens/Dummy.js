@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const OfferDetails = () => {
+const Dummy = () => {
     return (
         <View>
             <Text></Text>
@@ -9,6 +9,6 @@ const OfferDetails = () => {
     )
 }
 
-export default OfferDetails
+export default Dummy
 
 const styles = StyleSheet.create({})
