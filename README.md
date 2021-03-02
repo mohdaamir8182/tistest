@@ -2,7 +2,7 @@
 
 ## How to Run?
 
-### Clone the project
+##### Clone the project
 # Navigate into project root directory
 # Run 'yarn' or 'npm install' - This will install all required libraries and packages.
 # Run the project using 'npx react-native run-android' for ANDROID 
