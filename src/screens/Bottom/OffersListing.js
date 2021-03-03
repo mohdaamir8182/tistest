@@ -139,11 +139,10 @@ const styles = StyleSheet.create({
   card: {
     height: 340,
     marginHorizontal: 10,
-    marginVertical: 5,
     paddingTop: 0,
     borderRadius: 10,
     backgroundColor: '#d0d0d0',
-    marginVertical: 15,
+    marginVertical: 10,
     marginHorizontal: 15,
     borderRadius: 5,
     backgroundColor: '#fff',
