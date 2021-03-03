@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, View, Alert} from 'react-native';
+import {StyleSheet, ImageBackground, Alert} from 'react-native';
 import {LoginManager, AccessToken, GraphRequest, GraphRequestManager} from 'react-native-fbsdk';
 import { useDispatch} from 'react-redux';
 import {saveUserInfo} from '../redux/actions/loginActions';
@@ -56,17 +56,18 @@ const Fblogin = (props) => {
   };
 
   return (
-    <View style={styles.container}>
+    <ImageBackground source={require('../assets/bgsplash.jpeg')} resizeMode="cover" style={styles.container} >
       <Logo />
 
       <Button title="Login with Facebook" onPress={onFacebookButtonPress} />
-    </View>
+    </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    ...StyleSheet.absoluteFillObject,
     alignItems: 'center',
     justifyContent: 'space-around',
     backgroundColor: '#cdd0cb'

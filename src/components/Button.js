@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, TouchableOpacity } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, Image } from 'react-native'
 
 const Button = (props) => {
 
@@ -10,6 +10,7 @@ const Button = (props) => {
             style={styles.container} 
             onPress={onPress}
         >
+            <Image source={require("../assets/fb.png")} style={{height: 45, width: 45, tintColor: '#fff'}} resizeMode="contain" />
             <Text style={styles.title}>{title}</Text>
         </TouchableOpacity>
     )
@@ -17,17 +18,19 @@ const Button = (props) => {
 
 const styles = StyleSheet.create({
     container:{
+        flexDirection: 'row',
         height: 60,
-        paddingHorizontal: "20%",
+        paddingLeft: 20,
         alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#290149',
+        justifyContent: "space-between",
+        backgroundColor: 'blue',
         borderRadius: 10
     },
     title:{
         color: "#fff",
         fontWeight: 'bold',
-        fontSize: 18
+        fontSize: 14,
+        marginHorizontal: 30
     }
 })
 

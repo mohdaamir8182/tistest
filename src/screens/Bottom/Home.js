@@ -4,7 +4,9 @@ import {
   StyleSheet,
   TextInput,
   View,
-  ScrollView
+  ScrollView,
+  Image,
+  ImageBackground
 } from 'react-native';
 import Category from '../../components/Category';
 import Header from '../../components/Header';
@@ -34,7 +36,8 @@ const Home = (props) => {
   };
 
   return (
-    <ScrollView contentContainerStyle={styles.container}>
+    <ImageBackground source={require('../../assets/bg.jpeg')} resizeMode="cover" style={styles.container} >
+
       <StatusBar backgroundColor="teal" />
 
       <Header
@@ -44,8 +47,11 @@ const Home = (props) => {
         onLeftIconPress={onLeftIconPress}
       />
 
+      <ScrollView contentContainerStyle={{flexGrow: 1}}  showsVerticalScrollIndicator={false} >
+
       <View style={styles.searchContainer}>
         <View style={styles.searchbox}>
+          <Image source={require('../../assets/search.png')} style={styles.searchIcon} />
           <TextInput
             placeholder="Search Category, Place or Merchant"
             value={keyword}
@@ -97,35 +103,52 @@ const Home = (props) => {
         </View>
 
       </View>
-    </ScrollView>
+
+      </ScrollView>
+
+    </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flexGrow: 1,
-    backgroundColor: '#cdd0cb',
+    flex: 1,
+    ...StyleSheet.absoluteFillObject,
+    //backgroundColor: '#cdd0cb',
   },
   searchContainer: {
-    flex: 4,
+    flex: 2,
     justifyContent: 'center',
+    marginTop: 20,
+    marginBottom: 20
   },
   searchbox: {
     height: 50,
+    flexDirection: 'row',
+    alignItems: "center",
     marginHorizontal: 30,
     marginTop: 5,
     marginBottom: 10,
+    borderRadius: 5,
+    paddingHorizontal: 15,
+    backgroundColor: '#f0f0f0',
+  },
+  searchIcon:{
+    height: 20, 
+    width: 20, 
+    tintColor: 'grey',
+    marginLeft: 5,
+    marginRight: 10
   },
   input: {
     flex: 1,
-    backgroundColor: '#f0f0f0',
-    borderRadius: 5,
-    paddingHorizontal: 15,
+    fontSize: 10
   },
   categoryListContainer: {
-    flex: 7,
+    flex: 3,
     alignItems: 'center',
-    justifyContent: 'center',
+    justifyContent: "flex-end",
+    marginBottom: 50
   },
   top:{
     flexDirection: 'row',

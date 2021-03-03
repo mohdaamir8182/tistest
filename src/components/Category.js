@@ -11,27 +11,35 @@ const Category = (props) => {
         style={[{...styles.container},{marginHorizontal: style ? style.marginHorizontal : 0}]}
     >
       <Image source={icon} style={styles.icon} />
-      <Text style={{color: '#fff' , fontSize: 10}}>{title}</Text>
+      <Text style={styles.title}>{title}</Text>
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1 / 3,
+    flex: 1 ,
     aspectRatio: 1,
     height: 160,
-    //width: 130,
     borderRadius: 10,
     marginVertical: 5,
     alignItems: 'center',
-    justifyContent: 'space-around',
+    justifyContent: "center",
     backgroundColor: 'teal',
+    paddingTop: 10,
+    paddingBottom: 10
   },
   icon: {
     height: 65,
     width: 65,
   },
+  title:{
+    color: '#fff' ,
+    fontSize: 8,
+    textAlign: 'center',
+    marginTop: 10
+    //marginBottom: 30
+  }
 });
 
 export default Category;

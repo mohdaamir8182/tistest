@@ -121,18 +121,19 @@ const styles = StyleSheet.create({
     marginVertical: 20,
     marginLeft: 30,
     fontWeight: 'bold',
-    fontSize: 20,
+    fontSize: 18,
+    textAlign: 'left'
   },
   description: {
     marginHorizontal: 30,
     textAlign: 'justify',
+    fontSize: 12
   },
   distanceinfo: {
     height: 200,
     backgroundColor: 'black',
     opacity: 0.7,
     marginTop: 30,
-
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -145,7 +146,8 @@ const styles = StyleSheet.create({
   },
   distance: {
     fontWeight: 'bold',
-    fontSize: 25,
+    fontSize: 20,
+    textAlign: 'center',
     color: '#f0f0f0',
   },
   footerContainer: {
@@ -176,7 +178,8 @@ const styles = StyleSheet.create({
     marginBottom: 10,
   },
   infoText: {
-    fontSize: 16,
+    fontSize: 14,
+    textAlign: 'center',
     fontWeight: 'bold',
     color: 'teal',
   },

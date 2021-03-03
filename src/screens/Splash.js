@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, ImageBackground } from 'react-native';
 import Logo from '../components/Logo';
 
 const Splash = (props) => {
@@ -13,15 +13,16 @@ const Splash = (props) => {
       }, []);
 
     return (
-        <View style={styles.container}>
+        <ImageBackground source={require('../assets/bgsplash.jpeg')} resizeMode="cover" style={styles.container} >
             <Logo />
-        </View>
+        </ImageBackground>
     )
 }
 
 const styles = StyleSheet.create({
     container:{
         flex: 1,
+        ...StyleSheet.absoluteFillObject,
         alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#cdd0cb'

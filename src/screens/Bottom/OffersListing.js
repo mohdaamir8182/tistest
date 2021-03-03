@@ -7,6 +7,7 @@ import {
   Image,
   ScrollView,
   TouchableOpacity,
+  ImageBackground
 } from 'react-native';
 import * as Api from 'axios';
 import {BASE_URL, GET_DEALS} from '../../services/index';
@@ -37,6 +38,7 @@ const OffersListing = (props) => {
       }
     }
     fetchDeals();
+    
   }, []);
 
   const navigateToDetail = (dealID) => {
@@ -46,7 +48,7 @@ const OffersListing = (props) => {
   };
 
   return (
-    <View style={styles.container}>
+    <ImageBackground source={require('../../assets/bg2.jpeg')} resizeMode="cover" style={styles.container} >
       <Header
         {...props}
         title="Others"
@@ -57,11 +59,11 @@ const OffersListing = (props) => {
       <ScrollView contentContainerStyle={{flexGrow: 1}} showsVerticalScrollIndicator={false} >
         {deals.length == 0 && !error ? (
           <View style={styles.indicator}>
-            <ActivityIndicator color="teal" />
+            <ActivityIndicator color="#fff" style={{height: 30}} />
           </View>
         ) : error ? (
           <View style={styles.indicator}>
-            <Text>No Data Found</Text>
+            <Text style={styles.noData}>No Data Found</Text>
           </View>
         ) : (
           deals.map((deal) => (
@@ -119,15 +121,15 @@ const OffersListing = (props) => {
           ))
         )}
       </ScrollView>
-    </View>
+    </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    ...StyleSheet.absoluteFillObject,
     justifyContent: 'center',
-    backgroundColor: '#cdd0cb',
   },
   indicator: {
     flex: 1,
@@ -135,7 +137,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   card: {
-    height: 330,
+    height: 340,
     marginHorizontal: 10,
     marginVertical: 5,
     paddingTop: 0,
@@ -197,18 +199,26 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   infoText: {
-    fontSize: 14,
+    fontSize: 11,
     color: 'teal',
+    textAlign: 'center',
+    marginTop: 5
   },
   infoDescription: {
-    fontSize: 12,
+    fontSize: 10,
     color: 'grey',
+    textAlign: 'center',
+    marginTop: 2
   },
   verticleLine: {
     height: '100%',
     width: 1,
     backgroundColor: '#d0d0d0',
   },
+  noData:{
+    fontSize: 20,
+    color: '#fff'
+  }
 });
 
 export default OffersListing;
